@@ -1,0 +1,97 @@
+{
+  "sdkBuildToolsPath": "E:/Sdk/build-tools/29.0.2/",
+  "keystore": {
+    "path": "E:/packerTool/test.jks",
+    "storePassword": "000000",
+    "keyAlias": "key0",
+    "keyPassword": "000000"
+  },
+  "packerQueue": [
+    {
+      "originalApkName": "app.apk",
+      "isOnlyAddChannels": true,
+      "targetApks": [
+        {
+          "description": "存放在oss上的包，官方的apk，放到oss上的（所有bd渠道的包）",
+          "outputDirName": "oss",
+          "channelNames": [
+            "offical"
+          ],
+          "renameChannelApks": [
+            {
+              "channel": "offical",
+              "channelReplace": "latest"
+            }
+          ]
+        },
+        {
+          "description": "所有应用市场包",
+          "outputDirName": "应用市场/appmarket",
+          "channelNames": [
+            "baidu",
+            "xiaomi",
+            "huawei",
+            "oppo",
+            "vivo",
+            "vivo2",
+            "anzhi",
+            "sougou",
+            "mumayi",
+            "meizu",
+            "lianxiang",
+            "chuizi",
+            "ppzhushou",
+            "leshi",
+            "samsung",
+            "ydmm",
+            "jifeng",
+            "jinli",
+            "wuliang20180926",
+            "bdydc"
+          ]
+        },
+        {
+          "description": "投放的apk",
+          "outputDirName": "投放",
+          "channelNames": [
+            "toufangyyb2",
+            "toufangyyb3",
+			"tianguaxinxi",
+			"ndsc",
+			"yimagdt_01",
+            "yimagdt_02",
+            "yimagdt_04",
+            "yimagdt_05",
+            "yimagdt_06"
+          ]
+        }
+      ]
+    },
+    {
+      "originalApkName": "app-yyb.apk",
+      "isOnlyAddChannels": false,
+      "targetApks": [
+        {
+          "description": "应用宝加固包",
+          "outputDirName": "oss/yyb",
+          "channelNames": [
+            "yyb"
+          ]
+        }
+      ]
+    },
+    {
+      "originalApkName": "app-360.apk",
+      "isOnlyAddChannels": false,
+      "targetApks": [
+        {
+          "description": "360加固包",
+          "outputDirName": "oss/360",
+          "channelNames": [
+            "T360"
+          ]
+        }
+      ]
+    }
+  ]
+}
